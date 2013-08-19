@@ -20,4 +20,9 @@ public class Packet16Join extends CubeWorldPacket {
         buf.writeLong(entId);
         buf.writeBytes(connInfo);
     }
+    
+    public long getEntID() 
+    {
+        return this.entId;
+    }
 }
